@@ -1,0 +1,38 @@
+#mapDiv {
+    height: 800px;
+    width: 100%;
+}
+
+.tytul {
+    height: 10%;
+    width: 100%;
+    background: #cccccc;
+    border: 3px solid #acacac;
+    text-align: center;
+    font-family:cursive;
+}
+
+.grafika{
+    height: 90%;
+    width: 100%;
+}
+
+.linki{
+    height: 20%;
+    width: 100%;
+}
+
+.tekst{
+    height: 40%;
+    width: 100%;
+    background: #cccccc;
+    border: 3px solid #acacac;
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif   ;
+}
+
+.footer{
+    height: 20%;
+    width: 100%;
+}

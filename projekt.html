@@ -1,0 +1,59 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.22/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.22"></script>
+    <title>Lokale gastronomiczne w Lublinie</title>
+</head>
+
+<body>
+    <div class="tytul">
+        <h1>Lublin - miasto wielu smaków</h1>
+
+    <div class="grafika">
+        <img src="zdj/lublin.jpg">
+    </div>
+
+    <div class="linki">
+        <button id="pol"><img src="zdj/polska.jpg" alt="kuchnia polska"/></button>
+        <button id="amer"><img src="zdj/amerykanska.jpg" alt="kuchnia amerykanska"/></button>
+        <button id="wlos"><img src="zdj/wloska.jpeg" alt="kuchnia włoska"/></button>
+        <button id="taj"><img src="zdj/tajska.jpg" alt="kuchnia azjatycka"/></button>
+        <button id="kaw"><img src="zdj/kawiarnia.jpg" alt="kawiarnia"/></button>
+        <button id="bar"><img src="zdj/bar.jpg" alt="bar"/></button>
+    </div>
+
+    <div id="mapDiv"></div>
+
+    <div class="tekst">
+        <p>Mapa przedstawia lokale gastronomiczne na terenie miasta Lublin, które warto odwiedzić:</p>
+        <ul>
+            <li><b><a href="https://www.chata.lublin.pl">Chata Swojsko Strawa</a></b> - chata z XIX wieku oferująca regionalne dania, które przyciągają smakiem oraz ceną. 
+                Jedzenie przyrządzane jest według przepisów kuchni staropolskiej, a w piątkowe i sobotnie wieczory do posiłków przygrywają folkowe kapele. Przy dźwiękach skrzypiec można zjeść także gicz cielęcą w sosie chrzanowym czy udziec świński z kaszą i ogórkami. Żurek, pierogi czy bigos będą smakować jak w domu.</li>
+            <li><b><a href="https://www.facebook.com/RedRockCity.Lublin/">Red Rock City</a></b> - miejsce dla fanów kuchni amerykańskiej. W roli głównej burgery. Są klasyczne i bardziej wymyślne, np. z krewetkami i majonezem limonowym.
+                Na specjalne zamówienie burger WTF, czyli 2 kg wołowiny w bułce. Są też żeberka, karkówka, steki czy skrzydełka, a dla wegan zupy lub sałatki. Lokal może się pochwalić szbyką oraz miłą obsługą, a także częste promocje (zwłaszcza dla studentów).</li>
+            <li><b><a href="https://queenmama.pl">Queen Mama</a></b> – włoska restauracja w sercu Starego Miasta. Menu zawiera włoskie klasyki, takie jak pasty, owoce morza oraz risotto. Pizza, która jest tworzona wg włoskiej receptury oraz wypiekana w ogromnym kamiennym piecu dla wielu jest rajem dla podniebienia.
+                Są tu alkohole z 21 kranów z: piwem, winem, koktajlami, wermutami i spritz’ami. Wszystko zapieczętowane i przywiezione z najlepszych winjnic z Piemontu, Szampanii i Sycylii.                
+                Queen Mama to świetne miejsce na lunch z przyjaciółmi i kolacje pod gwiaździstym sufitem. Radosne i bujne za dnia miejsce robi się funky w nocy, z muzyką i przytulnym klimatem.</li>
+            <li><b><a href="http://www.sajgonlublin.pl">Bar Sajgon</a></b> - egzotyczna, tajska kuchnia. Słodko-kwaśne specjały, ostre i słone potrawy, świeże zioła, aromatyczne przyprawy. Wszystko oparte na oryginalnych i świeżych produktach. 
+                Zjemy tu zupy, między innymi ostro-kwaśną z trawą cytrynową i krewetkami bądź kurczakiem czy aromatyczny bulion z pierożkami won ton z wieprzowiną, smażone makarony np. makaron ryżowy z jajkiem, wieprzowiną, kapustą Pak Choi i brokułem oraz dania z woka, przykładowo rostbef wołowy z grzybami shitake, baby kukurydzą, białą cebulą w sosie sezamowym podany na gorącym półmisku. Deser? Pudding z tapioki czy ryż z sorbetem mango.</li>
+            <li><b><a href="https://www.parzona.cafe">ParZona</a></b> to połączenie kawiarni i bistro. Miejsca wielu pokoleń, gdzie każdy czuje się swobodnie. Lokal nawiązuje do tradycji picia kawy oraz tradycji spotkań przy kawie. Wraz z lokalnymi artystami, twórcami i designerami wychodzi poza obszar kawiarni, spotyka się na zielonych skwerach, placach i ulicach Lublina inspirując się nawzajem.
+                W ParZonie można zjeść pyszne śniadania, lunche, makarony, sałatki. Serwowane dania komponowane są ze świeżych, sezonowych produktów dostarczanych przez lokalnych producentów. ParZona posiada też mnóstwo słodkości.                
+                Klimat sprzyja zarówno rozmowom, czytaniu jak i pracy. W powietrzu unosi się dużo dobrej energii i zapach świeżo mielonej kawy, bo kawa to pasja ParZony... espresso, americano, cappuccino, flat white, latte, chemex, drip, aeropress oraz wszelkie inne wariacje…</li>
+            <li><b><a href="http://perla.pl/pijalnia-piwa/">Perłowa Pijalnia Piwa</a></b> - nazwa lokalu może być myląca ale ta restauracja serwuje nie tylko piwo ale też przekąski i burgery. Perłowa Pijalnia Piwa stwarza możliwość delektowania się popularnymi piwami oraz odkrywania specjalnych, premierowych gatunków napoju z Browaru Perła, których nie znajdziecie w żadnym innym miejscu. 
+                Kucharze wykorzystują naturalne produkty z małych rodzinnych przedsiębiorstw oraz zmieniają menu wraz z porami roku. Potrawy serwowane przez Pijalnię Piwa nie podbiją kubków smakowych wegetarian. Zdecydowanie króluje tu mięso. Na talerz trafi tu m.in. comber z jelenia czy golonka. Latem oragnizowane są seanse filmowe na których może wspólnie ze znajomymi obejrzeć film i napić piwa.</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>Autor: Tomasz Beczek, 2022 </p>
+        <Kontakt>Kontakt: e-mailowy: tomsonb2000@gmail.com, telefoniczny: 530 717 613 </p>
+        <p><a href="https://www.facebook.com/Tooooomek">Facebook</a> </p>
+		<p>Wszelkie prawa zastrzeżone</p>
+    </div>
+</body>
+<script src="skrypt.js"></script>
+</html>
